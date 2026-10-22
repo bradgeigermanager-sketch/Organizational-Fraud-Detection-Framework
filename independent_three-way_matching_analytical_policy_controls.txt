@@ -1,0 +1,7 @@
+
+Independent Three-Way Matching
+
+The Three-Way Match is the foundational control of accounts payable. It ensures that the company only pays for items that were explicitly ordered and actually received.
+• Purchase Order (PO) Verification: The process begins when the procurement department issues an authorized PO to a vendor. This document locks in the approved quantities, item descriptions, and negotiated prices. When an invoice arrives, the system must cross-reference it against this original PO. Any discrepancy in unit price or item description flags an automatic payment hold.
+• Receiving/Logistics Log Verification: The warehouse or receiving dock must log shipments independently without seeing the vendor's invoice or the PO’s exact quantities (often called a blind receiving log). This forces staff to manually count and inspect items. The matching system verifies that the quantity billed on the invoice perfectly matches the quantity verified by logistics. This prevents paying for "short" shipments or damaged goods.
+• Supplier Invoice Verification: The invoice is the vendor's demand for payment. The automated matching engine checks that the invoice details do not exceed the tolerances of the PO and Receiving Log. For example, if a PO was for 100 units at $10 each, but the invoice lists 100 units at $12 each, the invoice is routed to an exception queue for manual management review. No cash can be released until all three documents match or a formal variance authorization is signed.
