@@ -1,0 +1,23 @@
+Bidding and Procurement Anomalies
+
+
+The "Losing Bidder" Subcontractor
+
+In sophisticated bid-rigging rings, competing vendors secretly agree on who will win a project before the bids are ever submitted to the company.
+• Compensating the Losers: To reward the companies that intentionally submitted inflated or non-competitive "cover bids," the winning vendor will often hire those losing competitors as subcontractors once the project kicks off.
+• Post-Award Audits: Implement a mandatory compliance check 30 to 60 days after a major contract is awarded. Require the prime contractor to submit a certified subcontractor roster.
+• Cross-Checking Bids: Cross-reference this subcontractor roster against the original bidder list. If a company that lost the open competitive bid is now performing 40% of the work as a sub, it indicates a collusive market-sharing agreement.
+
+Metadata Overlap
+
+Digital bidding has made it easier to detect collusion because fraudsters often use the same computer or template to create "competing" bid documents.
+• The File Property Audit: When vendors submit digital proposals (PDFs, Word documents, or spreadsheets), download the raw files and extract their metadata.
+• Key Red Flags: Look closely at the Author, Company, Creation Date, and Last Modified By tags. If three supposedly independent, competing vendors submit bids, but the metadata shows all three files were created by the exact same user or on the exact same corporate laptop, the bids are fraudulent.
+• Template Analysis: Similarly, check for identical spelling errors, unique formatting margins, or matching mathematical errors across different vendor proposals. This proves the documents were drafted in cooperation rather than competition.
+
+The "Rotation" Pattern
+
+Bid rotation occurs when vendors take turns being the low bidder on a series of contracts to artificially keep prices high for the entire industry.
+• Timeline Mapping: To detect this, plot all historical contract awards over a 24- to 36-month period on a timeline, categorized by region, product type, or purchasing office.
+• Spotting the Pattern: Look for highly predictable sequences. For example, if Vendor A wins Job 1, Vendor B wins Job 2, Vendor C wins Job 3, and then the cycle repeats perfectly, competition is an illusion.
+• Predictive Analysis: If you can accurately predict who will win an upcoming public tender based purely on historical rotation, suspend the bidding process and initiate an antitrust review.
