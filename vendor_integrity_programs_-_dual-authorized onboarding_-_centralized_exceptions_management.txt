@@ -1,0 +1,19 @@
+Vendor Integrity Programs
+
+
+Dual-Authorized Onboarding
+
+The vendor master file is the "gatekeeper" to the company's bank accounts. If an employee can freely add a fake vendor, they can easily steal money.
+• First-Level Validation: When a request to add a new vendor is submitted, a dedicated compliance officer (independent of procurement) must verify the business's legitimacy. This includes checking active state registry filings, verifying IRS tax status, and checking global sanctions lists.
+• The Secondary Sign-Off: Once validated, the vendor file remains "pending" or "inactive" in the ERP system. It cannot be used to issue a PO or process a payment until a secondary finance manager reviews the compliance documentation and signs off to activate the profile. This eliminates single-point vulnerability.
+
+Centralized Exceptions Management
+
+"Emergency" or "Sole Source" procurement paths are the most common vehicles for high-value fraud, as they bypass standard competitive bidding rules completely.
+• Defining True Emergencies: Tighten internal policies to strictly define what constitutes an emergency (e.g., an active facility flood or a critical system outage). Wanting to hit a year-end budget deadline is not an emergency.
+• Executive-Level Elevators: Any request to bypass competitive bidding must automatically escalate out of the standard procurement loop. It should require documented justification and written sign-off from the CFO or Chief Compliance Officer.
+• Retrospective Auditing: Maintain a centralized register of all sole-source exceptions. This log must be audited quarterly by the board to identify any patterns of specific departments or buyers overusing emergency paths to favor particular vendors.
+
+Additional recommendations: 
+  Segregation of Duties (SoD) matrix
+  Automate the Employee-Vendor matching process described above
