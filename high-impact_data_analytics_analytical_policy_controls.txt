@@ -1,0 +1,30 @@
+High-Impact Data Analytics
+
+
+The Employee-Vendor Match
+
+Fraudsters inside an organization frequently route illicit payments to themselves by setting up shell companies under their own names or aliases.
+• Data Sources Needed: You must extract the HR Employee Master File (including names, addresses, bank accounts, SSNs/Tax IDs, and emergency contacts) and the AP Vendor Master File.
+• Joining and Matching: Run an automated script to perform an exact and fuzzy match join between the two files. Look for overlapping fields, particularly matching bank routing/account numbers and physical addresses.
+• The P.O. Box Loophole: Fraudulent employees often use a P.O. Box or a residential mail drop to hide their identity. Filter your vendor master list for keywords like "P.O. Box," "Box," "PMB" (Private Mailbox), or known addresses of local commercial mail companies (like UPS Store locations). Cross-reference any hits against employee records.
+
+Benford’s Law Testing
+
+Benford's Law is a statistical tool used to identify anomalous or fabricated financial numbers based on the natural distribution of digits.
+• The Logarithmic Rule: In authentic, naturally occurring transaction data, the number 1 appears as the leading first digit 30.1% of the time. The number 2 appears 17.6% of the time, scaling downward until the number 9, which only appears as a leading digit 4.6% of the time.
+• Detecting Human Manipulation: When employees invent fraudulent invoice amounts, they tend to choose numbers uniformly or repeatedly use specific numbers just under their approval limits.
+• Spotting the Spike: By running a Benford’s Law analysis on the entire history of invoice amounts, you can plot the actual distribution against the expected curve. A massive, unnatural spike at a specific leading digit (like an unusual cluster of invoices starting with 4 or 9) pinpoints exactly where manual fraud testing should begin.
+
+The Split-Invoice Trap
+
+Employees frequently have delegated authority to sign off on purchases up to a specific dollar limit without needing higher management approval.
+• Circumventing Thresholds: If an manager has a $10,000 approval limit, but wants to steer an unauthorized $27,000 contract to a favored vendor, they cannot submit a single invoice.
+• Identifying Split Invoices: To catch this, query your invoice database for duplicate vendors, identical transaction dates (or within 48–72 hours), and sequential invoice numbers.
+• The Threshold Filter: Specifically filter for clusters of invoices that sit just below key approval thresholds—such as multiple entries for $9,500, $9,800, and $9,900 from the same vendor. The system should automatically flag these for independent audit review rather than allowing automated approval.
+
+Sequential Invoice Numbers
+
+A legitimate, established vendor services dozens or hundreds of clients simultaneously. Their invoice numbers to you will fluctuate dramatically between orders.
+• The Shell Company Indicator: If a vendor sends you Invoice #101 in January, Invoice #102 in February, and Invoice #103 in March, it means your company is their only client.
+• Fabricated Billing: This pattern strongly suggests the vendor is a shell company created purely as a pass-through entity for a corrupt employee to skim corporate funds.
+• Automated Flags: Build an alert in your ERP system that counts the numerical distance between invoices from the same vendor. If the sequence is perfectly sequential over a 90-day period, the vendor account should be locked pending a physical address verification and business license check.
