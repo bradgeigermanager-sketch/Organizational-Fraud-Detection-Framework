@@ -1,0 +1,19 @@
+Structural and Policy Controls
+
+
+Strict Segregation of Duties (SoD)
+
+Fraud thrives when one person controls a transaction from beginning to end. Segregation of Duties creates a system of checks and balances.
+• The Four Personas: Divide your procurement workflow so that no single employee can cross over between these distinct roles:
+	1. The Requester: The operational employee who needs the goods (e.g., a factory floor manager needing parts). They have no authority to pick the vendor.
+	2. The Approver: The department head who owns the budget. They verify funds are available but cannot input new vendors or cut checks.
+	3. The Buyer: The procurement professional who runs the competitive bidding and negotiates terms. They cannot approve their own selections or access bank accounts.
+	4. Accounts Payable (AP): The finance clerk who executes the final payment. They can only release funds if the prior three personas have completed their steps correctly.
+• ERP Role Restraints: Enforce this digitally. System architecture profiles must hard-code these restrictions so that an AP clerk cannot log in with procurement credentials, and vice versa.
+
+Mandatory Rotation & Leave
+
+Fraud schemes require constant management and cover-up by the corrupt employee to avoid detection.
+• The Consecutiveness Rule: Implement a strict policy requiring all procurement personnel, buyers, and vendor-managers to take at least two consecutive weeks of paid leave every calendar year.
+• Disrupting the Scheme: While the employee is away, their accounts, active files, and emails must be completely handed over to a peer or supervisor.
+• The Out-of-Office Reveal: Most ongoing procurement fraud schemes (like intercepting vendor complaints, manipulating invoice approvals, or altering delivery logs) collapse during this window because the covering employee will naturally notice the irregularities.
