@@ -1,0 +1,67 @@
+
+Corporate Policy: Segregation of Duties (SoD) in Procurement and Accounts Payable
+
+Document ID: POL-FIN-042
+Effective Date: October 22, 2026
+Version: 3.0
+Owner: Office of the Chief Financial Officer (CFO)
+Applies To: All employees, contractors, and third-party agents involved in procurement, supply chain, budgeting, and accounts payable functions.
+
+1. Purpose & Scope
+
+This policy establishes a formal Segregation of Duties (SoD) matrix to protect organizational assets from fraud, embezzlement, errors, and conflicts of interest. The core directive is that no single individual shall have absolute control over more than one key phase of any financial transaction.
+This policy applies universally across all corporate departments, regional offices, and subsidiaries, governing both private sector entities and public/governmental compliance workflows.
+
+2. Core Procurement Personas & Roles
+
+To maintain strict internal controls, the procurement-to-payment lifecycle is divided into four mutually exclusive roles:
+• The Requester: The business unit or operational employee who identifies a need for goods or services and submits a purchase requisition. They have no authority to select vendors or authorize payments.
+• The Approver: The department head or manager with budgetary authority over the specific cost center. They verify funds are available but cannot onboard vendors or issue payments.
+• The Buyer/Procurement: The procurement professional responsible for running competitive bids, vetting suppliers, negotiating contracts, and issuing Purchase Orders (POs). They cannot approve budgets or access corporate bank accounts.
+• Accounts Payable (AP): The finance team member responsible for processing vendor invoices and executing disbursements. They have no role in vendor selection or requisition creation.
+
+3. Segregation of Duties (SoD) Matrix
+
+The table below outlines the system permissions and procedural limits enforced across the organization.
+
+Functional Activity	👤 Requester	📋 Approver	🤝 Buyer / Procurement	💳 Accounts Payable
+Create Purchase Requisition	ALLOWED	Forbidden	Forbidden	Forbidden
+Approve Requisition / Budget	Forbidden	ALLOWED	Forbidden	Forbidden
+Onboard / Edit Vendor Master File	Forbidden	Forbidden	ALLOWED (Pending Approval)	Forbidden
+Approve New Vendor Profile	Forbidden	Forbidden	Forbidden	ALLOWED (Finance Mgr)
+Issue / Modify Purchase Orders (PO)	Forbidden	Forbidden	ALLOWED	Forbidden
+Log Blind Receiving / Goods Receipt	ALLOWED	Forbidden	Forbidden	Forbidden
+Enter / Edit Vendor Invoice	Forbidden	Forbidden	Forbidden	ALLOWED
+Execute Payment Disbursement / Wire	Forbidden	Forbidden	Forbidden	ALLOWED
+
+
+4. Incompatible Functions & System Restraints
+
+The ERP and accounting platforms must be hard-coded to prevent user accounts from holding conflicting security profiles. The following combinations are strictly prohibited:
+• Requisitioner vs. Approver: A user cannot approve a purchase requisition that they generated.
+• Procurement vs. AP Invoice Entry: A buyer who negotiated a vendor contract cannot input or modify invoices received from that specific vendor.
+• Vendor Setup vs. Payment Execution: Any employee with system access to create or modify vendor details (names, tax IDs, banking information) is completely barred from executing payments or wire transfers.
+• Receiving vs. Invoice Entry: Personnel responsible for physically counting or receiving goods at a warehouse facility cannot process or match supplier invoices.
+
+5. Exception Management & Emergency Override Protocols
+
+Situations requiring a bypass of standard SoD controls are restricted to verified corporate emergencies (e.g., active safety hazards, major system outages, or critical supply chain interruptions).
+
+5.1 Emergency Bypass Procedure
+
+1. The Request: The department head must submit an Emergency Override Request detailing the operational risk and why competitive bidding/standard SoD cannot be maintained.
+2. Dual Sign-Off: The request must receive written or digital sign-off from both the Chief Financial Officer (CFO) and the Chief Compliance Officer (CCO) prior to system execution.
+3. The Audit Trail: The IT Security team will grant temporary, time-bound (maximum 48 hours) role permissions to execute the transaction.
+
+5.2 Retrospective Audits
+
+Every emergency override must be logged in a Centralized Exceptions Register. This register is reviewed quarterly by the Internal Audit Committee to check for patterns of departmental abuse or circumvention of controls.
+
+6. Compliance, Violations, & Monitoring
+
+• System Access Reviews: The IT Compliance team will conduct automated identity access reviews every 90 days to ensure no user profiles have accumulated conflicting ERP permissions.
+• Mandatory Rotation: All procurement personnel are required to take at least two consecutive weeks of paid leave annually, during which their entire account portfolio must be transferred to a peer.
+• Policy Violations: Bypassing these controls through credential sharing, splitting invoices, or falsifying approval logs constitutes severe misconduct. Violations will result in immediate disciplinary action, up to and including termination of employment and referral to law enforcement for criminal prosecution.
+If you want to move forward with implementing this policy, let me know:
+• Would you like a Python script to audit your existing ERP user logs for conflicting roles?
+• Do you need an Employee Acknowledgement Sign-Off form to accompany this document?
